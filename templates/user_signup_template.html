@@ -11,21 +11,44 @@
                 border-radius: 10px;
                 }
             
-            textarea {
-                margin: 10px 0;
-                width: 540px;
-                height: 120px;
-            }
+            
         </style>
     </head>
     <body>
-            <form method="post">   
-                <label for="rot">Rotate by:</label>
-                <input id="rot" type="text" name="rot" value="0">
-		<textarea name="text">{0} </textarea>
-
-                
-                <input type="submit"></textarea>
+            <form method="post"> 
+                <table>
+                    <tr><h1>Signup: </h1> </tr>
+                    <tr><h6>Create your account:</n>
+                        All entries must be between 3 and 20 characters,</n>
+                        and contain no spaces.</h6></tr>
+                    <tr>  
+                        <td><label for="username">Username:</label></td>
+                        <td><input id="username" type="text" name="username" value="0">
+                            <span class="error">{un_error}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td><label for="password">new password:</label></td>
+                            <td> <input id="password" type="password" name="password" value="0">
+                                <span class="error">{upw_error}</span>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td><label for="password2">      verify:</label></td>
+                            <td> <input id="password2" type="password" name="password2" value="0">
+                                <span class="error">{p2_error}</span>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input id="email" type="text" name="email" value="0">
+                                <span class="error">{em_error}</span>
+                            </td>
+                    </tr>    
+                   </table>
+                   <br>
+                   
+                   <input type="submit" value="Validate"/>
                 
             </form>
              
